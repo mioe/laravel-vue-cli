@@ -1,6 +1,12 @@
 # laravel + vue-cli
 This demo assumes you are serving this Laravel app via Valet at `laravel-vue-cli.mi`. If you are serving the laravel app at a different local URL, modify it accordingly in `vue.config.js`.
 
+## global dependencies
+```bash
+yarn global add @vue/cli
+composer global require laravel/installer
+```
+
 ## steps for scaffolding from scratch
 create laravel project
 ```bash
@@ -47,13 +53,13 @@ module.exports = {
 ```
 
 change `/resources/{app,adm}/package.json`
-```diff
-  "scripts": {
-    "serve": "vue-cli-service serve",
-  - "build": "vue-cli-service build",
-  + "build": "rm -rf ../../public/assets/{app,adm}/{js,css,img} && vue-cli-service build --no-clean",
-    "lint": "vue-cli-service lint"
-  },
+``` diff
+"scripts": {
+  "serve": "vue-cli-service serve",
+- "build": "vue-cli-service build",
++ "build": "rm -rf ../public/{js,css,img} && vue-cli-service build --no-clean",
+  "lint": "vue-cli-service lint"
+},
 ```
 
 configure laravel `routes` for spa, file `routes/web.php`
