@@ -41,7 +41,12 @@ yarn.lock
 # os temp files
 .DS_Store
 
+# my adm testing
+resources/my-umbrella
+
 # build files
 public/assets
+public/css
+public/js
 public/mix-manifest.json
 *.LICENSE.txt
