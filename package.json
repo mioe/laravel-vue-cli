@@ -1,0 +1,17 @@
+{
+  "name": "laravel",
+  "version": "4.1.6",
+  "private": true,
+  "scripts": {
+    "install": "cd resources/app && yarn && cd ../adm && yarn",
+    "build": "cd resources/app && yarn build && cd ../adm && yarn build",
+    "serve:app": "cd resources/app && yarn run serve",
+    "build:app": "cd resources/app && yarn run build",
+    "lint:app": "cd resources/app && yarn run lint",
+    "test:app": "cd resources/app && yarn run test:unit",
+    "serve:adm": "cd resources/adm && yarn run serve",
+    "build:adm": "cd resources/adm && yarn run build",
+    "lint:adm": "cd resources/adm && yarn run lint",
+    "test:adm": "cd resources/adm && yarn run test:unit"
+  }
+}

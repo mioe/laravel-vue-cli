@@ -1,3 +1,4 @@
+# laravel default
 /node_modules
 /public/hot
 /public/storage
@@ -10,3 +11,37 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+# local env files
+.env
+.env.local
+.env.*.local
+
+# log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# locks files
+package-lock.json
+yarn.lock
+
+# yarn Integrity file
+.yarn-integrity
+
+# editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# os temp files
+.DS_Store
+
+# build files
+public/assets
+public/mix-manifest.json
+*.LICENSE.txt
