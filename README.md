@@ -57,7 +57,7 @@ change `/resources/{app,adm}/package.json`
 "scripts": {
   "serve": "vue-cli-service serve",
 - "build": "vue-cli-service build",
-+ "build": "rm -rf ../public/{js,css,img} && vue-cli-service build --no-clean",
++ "build": "rm -rf ../../public/assets/{app,adm}/{js,css,img} && vue-cli-service build --no-clean",
   "lint": "vue-cli-service lint"
 },
 ```
